@@ -1,0 +1,522 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+#header{
+    background:linear-gradient(rgba(2, 2, 73, 0.6),rgba(0,0,0,0.6)),url(../IMAGES/banner.jpg);
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    padding: 15px 50px;
+    align-items: baseline;
+}
+
+#header nav .logo{
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+#header nav .logo span{
+    font-weight: 800;
+    color: red;
+}
+
+#header .navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#header .navbar ul li{
+    padding: 10px 15px;
+}
+
+#header .navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.6s;
+}
+
+#header .navbar ul li:hover a{
+    color: red;
+}
+
+.link-btn{
+    background-color: red;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#header .navbar ul li.link-btn:hover{
+    background: white;
+    color: red;
+}
+.btn-show{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    outline: none;
+    border: none;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.btn-show .bar{
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+
+/* ========banner========= */
+.banner{
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}
+
+.banner h1{
+    font-size: 50px;
+    text-transform:uppercase;
+    font-weight: 500;
+}
+
+.banner h1 span{
+    color: red;
+    font-weight: 800;
+
+}
+
+.banner p{
+    margin: 30px 0px;
+}
+
+/* ========services========= */
+#header .services{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+#header .services .service{
+    padding: 20px;
+}
+
+#header .services .service h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+#header .services .service p{
+    color: rgba(0,0,0,0.5);
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+#header .services .service a{
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+#header .services .service:nth-child(1){
+    background-color: #26282c;
+}
+#header .services .service:nth-child(1) h3,
+#header .services .service:nth-child(1) a{
+    color: white;
+}
+#header .services .service:nth-child(1) p{
+    color:rgba(255,255,255,0.5);
+}
+
+
+#header .services .service:nth-child(2){
+    background-color: #dad9d9;
+}
+
+
+#header .services .service:nth-child(3){
+    background-color: #F1F1F1;
+}
+
+/* ==========Project======== */
+#Project{
+    background-color: #F1F1F1;
+}
+
+#Project .row{
+    width: 90%;
+    margin:auto;
+    display: flex;
+}
+
+#Project .col{
+    width: 50vw;
+    height: 100vh;
+    padding: 100px;
+}
+
+#Project .col h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+}
+
+#Project .col p{
+    margin-bottom: 30px;
+    line-height: 30px;
+    color: rgba(0,0,0,0.6);
+
+}
+
+#Project .col-2{
+    position: relative;
+}
+
+.box-1{
+    position: absolute;
+    background-color: red;
+    height: 250px;
+    width: 350px;
+    top: 100px;
+    left: 100px;
+    box-shadow: 12px 22px 2px 2px darkred;
+
+
+}
+.box-2{
+    position: absolute;
+    background-color: #f2d2d2;
+    width: 500px;
+    height: 300px;
+    bottom: 10px;
+    left: 10px;
+    box-shadow: 2px 2px 2px 2px #f2d2d2;
+}
+#Project .img-box{
+    position: absolute;
+    background-image: url(../IMAGES/product.png);
+    background-size: cover;
+    width: 350px;
+    height: 400px;
+    left: 60px;
+    top: 180px;
+}
+.top{
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    padding: 10px;
+    background-color: red;
+    border-radius: 3px;
+}
+
+#Project .top a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* =========Trend======== */
+#Trend{
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+#Trend .plan{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Trend .img-box{
+    width: 800px;
+    height: 350px;
+    margin: 30px 0;
+}
+
+#Trend .img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#Trend p{
+    margin: 30px 0;
+    line-height: 30px;
+}
+
+#Trend h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 30px 0;
+    padding-top: 50px;
+}
+
+
+/* ===========Feature============ */
+#Feature .row{
+    width: 90%;
+    margin: auto;
+}
+
+#Feature .row h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 30px 10px;
+    color: #333;
+    padding-top: 10px;
+}
+
+#Feature .row p{
+    margin: 30px 10px;
+    color: #333;
+    line-height: 25px;
+}
+
+#Feature .row .boxs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#Feature .row .box{
+    box-shadow:2px 2px 2px 2px grey;
+}
+
+#Feature .row .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =========contact============ */
+
+.Contact .rows{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.Contact .col{
+    padding: 0 100px;
+    width: 60vw;
+    height: 70vw;
+}
+
+.Contact .col img{
+    position: relative;
+    height: 60%;
+    width: 124%;
+    object-fit: cover;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+.Contact .col h3{
+    color: red;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    margin: 30px 0;
+    border-bottom: 3px solid red;
+}
+.form .form-grp{
+    display: flex;
+    flex-direction: column;
+}
+.form-grp label{
+    margin: 10px 0px;
+    color: blue;
+    font-weight: 600;
+}
+
+.form-grp input{
+    padding: 10px;
+    height: 40px;
+    outline: none;
+    border: 1px solid grey;
+}
+
+textarea{
+    height: 150px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+    resize: none;
+    outline: none;
+    padding: 10px;
+
+}
+
+.form-grp input:focus,
+textarea:focus{
+    border: 3px solid blue;
+}
+
+.form-grp button{
+    align-self: flex-start;
+    width: 150px;
+    height: 40px;
+    color: white;
+    background-color: red;
+    border: none;
+    transition:0.6s;
+    font-size: 16px;
+    font-weight: 600;
+}
+.show{
+    display: block !important;
+}
+
+/* =================================media query================================ */
+@media (max-width:768px) {
+
+    #header nav .logo{
+        font-size: 18px;
+    }
+
+    #header .navbar{
+        
+        background-color: rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    #header .navbar ul{
+        flex-direction: column;
+        display: none;
+    }
+
+    #header .navbar ul li:hover{
+        background-color: rgba(255,255,255,0.5);
+    }
+
+    .banner h1{
+        font-size: 30px;
+    }
+
+    .banner p,
+    .banner .link-btn{
+        font-size: 14px;
+    }
+
+    #header .services{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .btn-show{
+        display: flex;
+    }
+
+    #Project .row{
+        flex-direction: column;
+    }
+
+ #Project .row .col{
+    padding: 0;
+    width: 100%;
+    height: 350px;
+ }
+ #Project .col h3{
+    font-size: 25px;
+ }
+
+ #Project .box-1,
+ #Project .box-2{
+    display: none;
+ }
+
+ #Project .img-box{
+    width: 100%;
+    height: 400px;
+    left: 0;
+    top: 50px;
+ }
+
+ #Trend h3{
+    font-size: 25px;
+    margin: 15px 0;
+ }
+
+ #Trend p{
+    padding: 0px;
+    margin: 15px 0;
+    line-height: 25px;
+ }
+
+ #Trend .img-box{
+    margin: 20px 10px;
+    width: 100%;
+    height: 400px;
+ }
+
+ #Feature{
+    height: auto;
+ }
+ #Feature .row h3{
+     font-size: 25px;
+ }
+
+ #Feature .row .boxs{
+    grid-template-columns: 1fr 1fr;
+ }
+
+ .Contact .rows{
+    flex-direction: column;
+ }
+
+ .Contact .col{
+    width: 100%;
+    padding: 10px;
+    height:60vh;
+ }
+
+ .Contact .col img{
+    width: 80%;
+ }
+ .form{
+    height: 600px;
+ }
+}
